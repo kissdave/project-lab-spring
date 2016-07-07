@@ -1,6 +1,6 @@
-package hu.bme.simonyi.dave.projectLabSpring.repository;
+package hu.bme.simonyi.dave.projectlabspring.repository;
 
-import hu.bme.simonyi.dave.projectLabSpring.model.Disposition;
+import hu.bme.simonyi.dave.projectlabspring.model.Disposition;
 import org.springframework.data.jpa.repository.JpaRepository;
 
 /**

@@ -1,4 +1,4 @@
-package hu.bme.simonyi.dave.projectLabSpring.web;
+package hu.bme.simonyi.dave.projectlabspring.web;
 
 import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.RequestMapping;

@@ -1,4 +1,4 @@
-package hu.bme.simonyi.dave.projectLabSpring.model;
+package hu.bme.simonyi.dave.projectlabspring.model;
 
 import javax.persistence.*;
 import java.io.Serializable;

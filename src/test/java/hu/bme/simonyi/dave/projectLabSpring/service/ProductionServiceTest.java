@@ -1,7 +1,7 @@
-package hu.bme.simonyi.dave.projectLabSpring.service;
+package hu.bme.simonyi.dave.projectlabspring.service;
 
-import hu.bme.simonyi.dave.projectLabSpring.model.Production;
-import hu.bme.simonyi.dave.projectLabSpring.repository.ProductionRepository;
+import hu.bme.simonyi.dave.projectlabspring.model.Production;
+import hu.bme.simonyi.dave.projectlabspring.repository.ProductionRepository;
 import org.junit.After;
 import org.junit.Before;
 import org.junit.Test;

@@ -1,4 +1,4 @@
-package hu.bme.simonyi.dave.projectLabSpring.config;
+package hu.bme.simonyi.dave.projectlabspring.config;
 
 import nz.net.ultraq.thymeleaf.LayoutDialect;
 import org.springframework.context.annotation.Bean;

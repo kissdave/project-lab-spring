@@ -1,4 +1,4 @@
-package hu.bme.simonyi.dave.projectLabSpring.service;
+package hu.bme.simonyi.dave.projectlabspring.service;
 
 /**
  * Created by dkiss on 2016. 07. 06..
