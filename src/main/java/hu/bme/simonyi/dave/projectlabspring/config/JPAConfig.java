@@ -26,7 +26,7 @@ import java.util.Properties;
  */
 @Configuration
 @EnableTransactionManagement
-@EnableJpaRepositories("hu.bme.simonyi.dave.projectLabSpring.repository")
+@EnableJpaRepositories("hu.bme.simonyi.dave.projectlabspring.repository")
 public class JPAConfig {
     @Bean
     public JpaVendorAdapter jpaVendorAdapter() {
@@ -42,7 +42,7 @@ public class JPAConfig {
         LocalContainerEntityManagerFactoryBean lef = new LocalContainerEntityManagerFactoryBean();
         lef.setDataSource(dataSource);
         lef.setJpaVendorAdapter(jpaVendorAdapter);
-        lef.setPackagesToScan("hu.bme.simonyi.dave.projectLabSpring.model");
+        lef.setPackagesToScan("hu.bme.simonyi.dave.projectlabspring.model");
         return lef;
     }
 
@@ -57,16 +57,16 @@ public class JPAConfig {
         InputStream fis = null;
         MysqlDataSource mysqlDataSource = null;
         try {
-            Resource resource = new ClassPathResource("db.properties");
-            fis = resource.getInputStream();
-            props.load(fis);
+//            Resource resource = new ClassPathResource("db.properties");
+//            fis = resource.getInputStream();
+//            props.load(fis);
             mysqlDataSource = new MysqlDataSource();
             mysqlDataSource.setURL("jdbc:mysql://localhost:3306/bssinfo?useUnicode=true&useJDBCCompliantTimezoneShift=true&useLegacyDatetimeCode=false&serverTimezone=UTC");
             mysqlDataSource.setUser("bssinfo");
             mysqlDataSource.setPassword("1234");
-        } catch (IOException e) {
-            Logger logger = LoggerFactory.getLogger(JPAConfig.class);
-            logger.error("Error", e);
+        } catch (Exception e) {
+            //Logger logger = LoggerFactory.getLogger(JPAConfig.class);
+            //logger.error("Error", e);
         }
         return (DataSource) mysqlDataSource;
     }
