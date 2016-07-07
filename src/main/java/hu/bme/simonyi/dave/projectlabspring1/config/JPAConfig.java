@@ -1,6 +1,8 @@
 package hu.bme.simonyi.dave.projectlabspring.config;
 
 import com.mysql.cj.jdbc.MysqlDataSource;
+import org.slf4j.Logger;
+import org.slf4j.LoggerFactory;
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;
 import org.springframework.core.io.ClassPathResource;
@@ -63,8 +65,8 @@ public class JPAConfig {
             mysqlDataSource.setUser("bssinfo");
             mysqlDataSource.setPassword("1234");
         } catch (IOException e) {
-            org.slf4j.Logger logger = org.slf4j.LoggerFactory.getLogger(JPAConfig.class);
-            logger.error(e.getMessage());
+            Logger logger = LoggerFactory.getLogger(JPAConfig.class);
+            logger.error("Error", e);
         }
         return (DataSource) mysqlDataSource;
     }

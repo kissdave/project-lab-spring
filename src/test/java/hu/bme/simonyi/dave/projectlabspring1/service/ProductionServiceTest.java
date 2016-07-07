@@ -14,8 +14,11 @@ import static org.junit.Assert.assertEquals;
  * Created by dkiss on 2016. 07. 06..
  */
 public class ProductionServiceTest {
-    public ProductionServiceTest() {
+    @Mock
+    ProductionRepository productionRepository;
 
+    public ProductionServiceTest() {
+        // Blank, no need to set up
     }
 
     @Before
@@ -25,10 +28,8 @@ public class ProductionServiceTest {
 
     @After
     public void tearDown() {
+        // No teardown operation right now.
     }
-
-    @Mock
-    ProductionRepository productionRepository;
 
     @Test
     public void testProductionService() {
