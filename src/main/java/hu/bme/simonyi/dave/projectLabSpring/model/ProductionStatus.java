@@ -24,5 +24,24 @@ public class ProductionStatus implements Serializable{
     private List<Production> productionList;
 
     public ProductionStatus() {
+        // Blank constructor for Hibernate
+    }
+
+    // --- Getters ---
+
+    public Integer getId() {
+        return id;
+    }
+
+    public String getName() {
+        return name;
+    }
+
+    public Integer getOrderNum() {
+        return orderNum;
+    }
+
+    public List<Production> getProductionList() {
+        return productionList;
     }
 }

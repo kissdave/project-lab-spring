@@ -33,7 +33,6 @@ public class ProductionServiceTest {
     @Test
     public void testProductionService() {
         ProductionService ps = new ProductionService();
-        ps.TestingFunction();
-        assertEquals(12.0, ps.TestingFunction(), 0.00001);
+        assertEquals(12.0, ps.testingFunction(), 0.00001);
     }
 }

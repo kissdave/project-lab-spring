@@ -18,9 +18,9 @@ public class Customer implements Serializable {
     private String name;
 
 
-    private String AccountingName;
-    private String AccountingAddress;
-    private String AccountingTaxNumber;
+    private String accountingName;
+    private String accountingAddress;
+    private String accountingTaxNumber;
 
     @ManyToMany
     @JoinTable(
@@ -35,5 +35,36 @@ public class Customer implements Serializable {
     private List<Production> productions;
 
     public Customer() {
+        // Blank constructor for Hibernate
+    }
+
+    // --- Getters ---
+
+    public Integer getId() {
+        return id;
+    }
+
+    public String getName() {
+        return name;
+    }
+
+    public String getAccountingName() {
+        return accountingName;
+    }
+
+    public String getAccountingAddress() {
+        return accountingAddress;
+    }
+
+    public String getAccountingTaxNumber() {
+        return accountingTaxNumber;
+    }
+
+    public List<Contact> getContacts() {
+        return contacts;
+    }
+
+    public List<Production> getProductions() {
+        return productions;
     }
 }

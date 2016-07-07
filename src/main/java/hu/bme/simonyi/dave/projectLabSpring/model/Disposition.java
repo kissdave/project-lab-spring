@@ -27,5 +27,32 @@ public class Disposition implements Serializable {
     private String dispositionVenue;
 
     public Disposition() {
+        // Blank constructor for Hibernate
+    }
+
+    // --- Getters ---
+
+    public Integer getId() {
+        return id;
+    }
+
+    public Post getPost() {
+        return post;
+    }
+
+    public Member getMember() {
+        return member;
+    }
+
+    public Production getProduction() {
+        return production;
+    }
+
+    public Date getDispositionTime() {
+        return dispositionTime;
+    }
+
+    public String getDispositionVenue() {
+        return dispositionVenue;
     }
 }

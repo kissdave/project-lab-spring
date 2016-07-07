@@ -32,5 +32,36 @@ public class Contact implements Serializable {
 
 
     public Contact() {
+        // Blank constructor for Hibernate
+    }
+
+
+    // --- Getters ---
+    public Integer getId() {
+        return id;
+    }
+
+    public String getFullName() {
+        return fullName;
+    }
+
+    public String getNickname() {
+        return nickname;
+    }
+
+    public String getEmail() {
+        return email;
+    }
+
+    public String getMobile() {
+        return mobile;
+    }
+
+    public List<Customer> getCustomers() {
+        return customers;
+    }
+
+    public List<Production> getProductions() {
+        return productions;
     }
 }

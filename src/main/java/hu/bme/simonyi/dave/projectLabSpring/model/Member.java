@@ -18,5 +18,6 @@ public class Member implements Serializable{
 
 
     public Member() {
+        // Blank constructor for Hibernate
     }
 }

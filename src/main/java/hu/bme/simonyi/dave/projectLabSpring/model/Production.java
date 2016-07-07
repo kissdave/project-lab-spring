@@ -53,5 +53,68 @@ public class Production implements Serializable{
 
 
     public Production() {
+        // Blank constructor for Hibernate
+    }
+
+    // --- Getters ---
+
+    public Integer getId() {
+        return id;
+    }
+
+    public String getName() {
+        return name;
+    }
+
+    public Date getStartTime() {
+        return startTime;
+    }
+
+    public Date getEndTime() {
+        return endTime;
+    }
+
+    public String getVenue() {
+        return venue;
+    }
+
+    public String getDescription() {
+        return description;
+    }
+
+    public String getTechDescription() {
+        return techDescription;
+    }
+
+    public Boolean getNeedPermission() {
+        return needPermission;
+    }
+
+    public Boolean getGotPermission() {
+        return gotPermission;
+    }
+
+    public Boolean getHD() {
+        return isHD;
+    }
+
+    public Integer getCameraNumber() {
+        return cameraNumber;
+    }
+
+    public Customer getCustomer() {
+        return customer;
+    }
+
+    public Contact getContact() {
+        return contact;
+    }
+
+    public ProductionStatus getProductionStatus() {
+        return productionStatus;
+    }
+
+    public List<Disposition> getDispositionList() {
+        return dispositionList;
     }
 }

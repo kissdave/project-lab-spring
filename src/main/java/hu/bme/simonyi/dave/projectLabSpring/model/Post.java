@@ -21,5 +21,6 @@ public class Post implements Serializable {
     private List<Disposition> dispositionList;
 
     public Post() {
+        // Blank constructor for Hibernate
     }
 }
