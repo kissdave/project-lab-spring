@@ -33,7 +33,7 @@ public class WebConfig extends WebMvcConfigurerAdapter{
 
     @Bean
     public SpringTemplateEngine templateEngine() {
-        Set<IDialect> dialects = new HashSet<>();
+        Set<IDialect> dialects = new HashSet<IDialect>();
         dialects.add(new LayoutDialect());
 
         SpringTemplateEngine engine = new SpringTemplateEngine();
@@ -56,4 +56,6 @@ public class WebConfig extends WebMvcConfigurerAdapter{
         super.configureDefaultServletHandling(configurer);
         configurer.enable();
     }
+
+
 }
